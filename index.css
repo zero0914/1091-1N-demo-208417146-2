@@ -1,0 +1,7 @@
+body {
+  background-color: darkolivegreen;
+}
+body ul li:hover {
+  background-color: crimson;
+  padding: 5px;
+}
