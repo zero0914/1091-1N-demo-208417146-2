@@ -1,0 +1,15 @@
+$blue-color: #17a2b8;
+$dark-color: #000000;
+$s-color: #8f4545;
+$red-color: #dc3545;
+$green-color: #02721e;
+$light-color: #ffffff;
+
+@mixin set-hover($color) {
+  color: ($color);
+}
+
+@mixin set-border($size) {
+  border-radius: 15px;
+  border: 2px solid;
+}

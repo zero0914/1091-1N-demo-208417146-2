@@ -1,0 +1,79 @@
+@import 'config';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('/img/hi-tech-interface-12-4k.jpg') no-repeat;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px;
+
+  a {
+    text-decoration: none;
+    padding: 5px;
+    margin: 5px;
+    color: $s-color;
+    @include set-border(2px);
+
+    &:hover {
+      @include set-hover($blue-color);
+    }
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 20px;
+  }
+}
+
+section.item {
+  display: grid;
+  grid-gap: 2ex;
+  margin: 30px 50px;
+  color: ($light-color);
+
+  .list {
+    padding: 2rem;
+
+    .inner {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  section.item {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  section.item {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1224px) {
+  section.item {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media screen and (min-width: 1824px) {
+  section.item {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
