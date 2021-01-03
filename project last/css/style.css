@@ -6,7 +6,7 @@
 }
 
 body {
-  background: url('/img/hi-tech-interface-12-4k.jpg'') no-repeat;
+  background: url('./img/hi-tech-interface-12-4k.jpg'') no-repeat;
 }
 
 .nav {
